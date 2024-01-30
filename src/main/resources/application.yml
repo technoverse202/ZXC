@@ -1,0 +1,13 @@
+
+quarkus:
+   datasource:
+      db-kind: oracle 
+      jdbc:
+        driver: oracle.jdbc.OracleDriver
+        url:  jdbc:oracle:thin:@1.2.3.4:2013:orcl/corres
+      username: ora
+      password: sys
+# drop and create the database at startup (use `update` to only update the schema)
+   hibernate-orm:
+      database:
+         generation: update
